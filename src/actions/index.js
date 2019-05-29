@@ -48,7 +48,7 @@ function authorsReducer(state = [], action) {
             } else {
               return [...state, { authorName: action.book.authorName, id: uuid() }];
             }
-            
+
     default:
       return state;
   }
